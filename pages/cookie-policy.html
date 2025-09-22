@@ -12,6 +12,8 @@
         content="MindsLoom cookie policy, cookies usage, digital marketing India, SEO agency, privacy controls">
     <title>Cookie Policy – MindsLoom | Digital Marketing & SEO India</title>
     <meta name="msvalidate.01" content="C8A862FC63849A014501B3257B7FEBDF"   />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mindsloom.com/cookie-policy.html">
     <link rel="icon" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" href="android-chrome-192x192.png" sizes="192x192" />
     <link rel="icon" href="android-chrome-512x512.png" sizes="512x512" />
@@ -19,14 +21,21 @@
     <link rel="stylesheet" href="./index.css" />
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jua:wght@400&display=swap"
+    <!-- Custom Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Julius+Sans+One&family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
+                        primary: '#23423f',
+                        secondary: '#f4eee0',
+                        beige: '#f5f5dc',
                         emerald: {
                             50: '#ecfdf5',
                             100: '#d1fae5',
@@ -41,11 +50,138 @@
                             500: '#f59e0b',
                             600: '#d97706'
                         }
+                    },
+                    fontFamily: {
+                        'Josefin Sans': ['Josefin Sans', 'sans-serif'],
+                        'julius': ['Julius Sans One', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'noto': ['Noto Sans', 'sans-serif']
                     }
                 }
             }
         }
     </script>
+    <style>
+        /* Custom animations and effects */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes navFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Navigation hover effects */
+        .nav-item {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .nav-item:hover {
+            animation: navFloat 0.9s ease-in-out;
+        }
+
+        /* Transparent header navigation hover */
+        .header-transparent .nav-item:hover {
+            color: rgba(244, 238, 224, 0.9) !important;
+        }
+
+        /* Scrolled header navigation hover */
+        .header-scrolled .nav-item:hover {
+            color: #23423f !important;
+        }
+
+        /* Social icons hover animation */
+        .social-icon {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .social-icon:hover {
+            animation: navFloat 0.9s ease-in-out;
+        }
+
+        .header-transparent .social-icon:hover {
+            color: rgba(244, 238, 224, 0.9) !important;
+        }
+
+        .header-scrolled .social-icon:hover {
+            color: #23423f !important;
+        }
+
+        /* Slide in animations */
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(244, 238, 224, 0.1);
+        }
+    </style>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7051CK0RY"></script>
     <script>
@@ -73,85 +209,95 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Include the same navbar from index.html -->
-    <header>
-        <div class="left_container">
-            <a href="index.html" class="left_elements">Home</a>
-            <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
-                class="left_elements" target="_blank">
-                <img src="fb icon.svg" alt="Icon" width="20" height="20" />
-            </a>
-            <a href="https://www.instagram.com/mindsloom2024" class="left_elements" target="_blank">
-                <img src="insta icon.svg" alt="Icon" width="20" height="20" />
-            </a>
-            <a href="https://www.linkedin.com/company/mindsloom/" class="left_elements" target="_blank">
-                <img src="linkedin icon.svg" alt="Icon" width="20" height="20" />
-            </a>
-            <a href="https://x.com/mindsloom" class="left_elements" target="_blank">
-                <img src="twitter icon.svg" alt="Icon" width="20" height="20" />
-            </a>
-        </div>
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Home Link & Social Links (Desktop) -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium text-lg">Home</a>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_mindsloom_"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://x.com/mindsloom"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/mindsloom/"
+                            class="social-icon text-black hover:text-primary transition-colors duration-300 hover:scale-110 transform">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <div class="logo">
-            <img class="company-logo" alt="" src="company-logo.png" />
-        </div>
+                <!-- Logo -->
+                <div class="flex items-center lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+                    <a href="index.html"
+                        class="w-10 h-10 lg:w-12 lg:h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                        <span class="text-lg lg:text-xl font-julius text-secondary">ML</span>
+                    </a>
+                </div>
 
-        <!-- Add mobile logo for mobile view -->
-        <div class="mobile-logo">
-            <img class="company-logo" alt="MindsLoom Logo" src="company-logo.png" style="width: 50px; height: auto" />
-        </div>
+                <!-- Navigation (Desktop) -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="pages/work.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Work</a>
+                    <a href="pages/services.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                    <a href="blogs.html"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Blogs</a>
+                    <a href="#about"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#contact"
+                        class="nav-item text-black hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </nav>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Our Work</a></li>
-                <li><a href="index.html#blog-section">Blogs</a></li>
-                <li><a href="#contact-section">Contact Us</a></li>
-            </ul>
-        </nav>
-
-        <!-- Add mobile menu toggle -->
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-            ☰
-        </button>
-
-        <!-- Add simple mobile dropdown -->
-        <div class="mobile-dropdown" id="mobileDropdown">
-            <div class="mobile-dropdown-header">
-                <img class="mobile-dropdown-logo" alt="MindsLoom Logo" src="company-logo.png" />
-                <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close mobile menu">
-                    ✕
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-black hover:text-primary transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
+        </div>
 
-            <div class="mobile-dropdown-content">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about-us">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="work.html">Our Work</a></li>
-                    <li><a href="index.html#blog-section">Blogs</a></li>
-                    <li><a href="#contact-section">Contact Us</a></li>
-                </ul>
-
-                <div class="mobile-social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
-                        target="_blank">
-                        <img src="fb icon.svg" alt="Facebook" />
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-primary/95 backdrop-blur-sm">
+            <div class="px-4 py-6 space-y-4">
+                <a href="index.html" class="block text-beige font-medium py-2 border-l-4 border-beige p-4">Home</a>
+                <a href="pages/work.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Work</a>
+                <a href="pages/services.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Services</a>
+                <a href="pages/blogs.html"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Blogs</a>
+                <a href="#about"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">About</a>
+                <a href="#contact"
+                    class="block text-secondary hover:text-beige transition-colors duration-300 font-medium py-2">Contact</a>
+                <div class="flex items-center space-x-6 pt-4 border-t border-secondary/20">
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-lg"></i>
                     </a>
-                    <a href="https://www.instagram.com/mindsloom2024" target="_blank">
-                        <img src="insta icon.svg" alt="Instagram" />
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-instagram text-lg"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/mindsloom/" target="_blank">
-                        <img src="linkedin icon.svg" alt="LinkedIn" />
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-twitter text-lg"></i>
                     </a>
-                    <a href="https://x.com/mindsloom" target="_blank">
-                        <img src="twitter icon.svg" alt="Twitter" />
+                    <a href="#" class="text-secondary hover:text-beige transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-lg"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
+
     <div class="container mx-auto max-w-7xl mt-16 p-6 md:p-10">
         <div class="bg-white/80 backdrop-blur-lg rounded-xl shadow-2xl border border-emerald-100">
             <!-- Header Section -->
@@ -438,395 +584,186 @@
             </div>
         </div>
     </div>
-    <!-- Contact Form Section -->
-    <section id="contact-section">
-        <div class="contact-container">
-            <!-- Heading Section -->
-            <div class="form-heading">
-                <h2 class="contact-us">Contact Us</h2>
-                <div class="we-are-at-container">
-                    <p class="contact-desc-head">
-                        Have an idea, challenge, or vision you’d like to bring to life?
-                    </p>
-                </div>
-                <div class="contact-us-at">
-                    <p class="contact-desc">
-                        Reach out to us via the form or email us directly at
-                        business@mindsloom.com. Prefer a quick chat? We're on WhatsApp too
-                        let’s connect instantly.
-                    </p>
-                </div>
-                <div class="whatsapp-button">
-                    <button class="whatsapp-btn" onclick="window.location.href='https://wa.me/919266811039'">
-                        <img class="whatsapp-icon" src="whatsapp.png" alt="WhatsApp Icon" />
-                        WhatsApp
-                    </button>
-                </div>
-            </div>
-
-            <!-- Form Section: Step 1 Basic Details -->
-            <div class="form-section">
-                <div class="form-container">
-                    <form class="contact-form" id="contactFormStep1">
-                        <div class="full-name">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required />
-                        </div>
-                        <div class="mail">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required />
-                        </div>
-                        <div class="mobile-number">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" />
-                        </div>
-                        <button type="button" id="nextBtn">Next</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal Popup for Step 2 -->
-    <div class="modal-overlay" id="formModal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeModal">×</span>
-            <form class="contact-form" id="contactFormStep2">
-                <div class="company-name">
-                    <label for="company">Company Name</label>
-                    <input type="text" id="company" name="company" />
-                </div>
-                <div class="project-type">
-                    <label for="services">Services Interested In *</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="services" value="Branding" />
-                            Branding</label>
-                        <label><input type="checkbox" name="services" value="Web Design" />
-                            Web Design</label>
-                        <label><input type="checkbox" name="services" value="SEO" />
-                            SEO</label>
-                        <label><input type="checkbox" name="services" value="Social Media" />
-                            Social Media</label>
-                        <label><input type="checkbox" name="services" value="Paid Ads" /> Paid
-                            Ads</label>
-                    </div>
-                </div>
-                <div class="project-cost">
-                    <label for="budget">Budget Range *</label>
-                    <select id="budget" name="budget" required>
-                        <option value="">-- Select Budget --</option>
-                        <option value="< ₹50K">
-                            < ₹50K</option>
-                        <option value="₹50K – ₹1L">₹50K – ₹1L</option>
-                        <option value="₹1L+">₹1L+</option>
-                    </select>
-                </div>
-                <div class="project-timeline">
-                    <label for="timeline">Project Timeline *</label>
-                    <select id="timeline" name="timeline" required>
-                        <option value="">-- Select Timeline --</option>
-                        <option value="ASAP">ASAP</option>
-                        <option value="1-3 months">1–3 months</option>
-                        <option value="Flexible">Flexible</option>
-                    </select>
-                </div>
-                <div class="website-link">
-                    <label for="website">Website URL</label>
-                    <input type="url" id="website" name="website" placeholder="https://example.com" />
-                </div>
-                <div class="referral-source">
-                    <label for="referral">How did you hear about us?</label>
-                    <input type="text" id="referral" name="referral" />
-                </div>
-                <div class="contact-type">
-                    <label for="contact-method">Preferred Contact Method</label>
-                    <label><input type="radio" name="contact_method" value="Email" checked />
-                        Email</label>
-                    <label><input type="radio" name="contact_method" value="Phone" />
-                        Phone</label>
-                    <label><input type="radio" name="contact_method" value="WhatsApp" />
-                        WhatsApp</label>
-                </div>
-
-                <div class="project-message">
-                    <label for="message">Message / Project Description *</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="button" id="submitBtn">Submit</button>
-                <div class="success-message" id="successMessage">
-                    Thanks! We'll get back to you within 10 minutes.
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!--brand logos loop Section-->
-
-    <!-- Logo Flow Section -->
-    <section class="py-16 bg-white" id="logo-flow-section">
-        <div class="container mx-auto px-6">
-            <div class="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
-                <h3 class="text-md font-bold text-gray-900 text-center mb-8 sm:text-2xl">
-                    Trusted by Industry Leaders
-                </h3>
-                <div class="overflow-hidden relative w-full">
-                    <div class="flex logo-scroll">
-                        <!-- First set of logos -->
-                        <div class="flex items-center flex-shrink-0" style="gap: 3rem">
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/samsung.png" style="height: 7rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/mountain_dew.png" style="height: 7rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/bellavita.png" style="height: 10rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/doritos.png" style="height: 8.2rem; width: 80%" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/kurkure.png" style="height: 8rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/timex.png" style="height: 10rem" />
-                            </div>
-                        </div>
-
-                        <!-- Duplicate set for seamless loop -->
-                        <div class="flex items-center flex-shrink-0" style="gap: 3rem; margin-left: 3rem">
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/samsung.png" style="height: 7rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/mountain_dew.png" style="height: 7rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/bellavita.png" style="height: 10rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/doritos.png" style="height: 8.2rem; width: 80%" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/kurkure.png" style="height: 8rem" />
-                            </div>
-                            <div
-                                class="bg-transparent backdrop-blur-sm rounded-2xl p-6 min-w-[120px] h-16 flex items-center justify-center flex-shrink-0">
-                                <img src="./logos/timex.png" style="height: 10rem" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
-    <style>
-        .font-heading {
-            font-family: 'Julius Sans One', sans-serif;
-            font-size: 1.8rem;
-        }
-
-        .font-body {
-            font-family: 'Jua', sans-serif;
-            font-size: 1rem;
-        }
-
-        .footer-bg {
-            background-color: #23423f;
-        }
-
-        .text-custom {
-            color: #696969;
-        }
-
-        .border-custom {
-            border-color: #3a5a56;
-        }
-
-        .hover-accent:hover {
-            color: #e8ddc3;
-        }
-
-        .accent-blue {
-            background-color: #958562;
-            color: black;
-        }
-
-        .accent-blue:hover {
-            background-color: #dac9a0;
-            color: white;
-        }
-
-        #logo-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #logo-holder img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #logo-holder {
-            width: 5rem;
-            height: 5rem;
-            background-color: white;
-        }
-    </style>
-
-    <!-- Footer -->
-    <footer class="footer-bg w-full">
+    <footer class="bg-primary w-full">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-            <!-- Main Footer Content -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
-
-                <!-- Company Info & Contact -->
+                <!-- Company Info -->
                 <div class="lg:col-span-1">
-                    <div id="logo-wrapper" class="mb-6">
-                        <h2 class="text-white font-bold mb-3 font-heading">MindsLoom</h2>
-                        <p class="text-custom leading-relaxed mb-4">Digital Marketing & Growth Solutions</p>
-                        <!-- Logo placeholder space -->
-                        <div id="logo-holder" class="rounded-lg mb-4 flex items-center justify-center">
-                            <img src="company-logo.png" alt="MindsLoom Logo" class="object-contain" />
+                    <div class="mb-6">
+                        <h2 class="text-secondary font-bold mb-3 font-julius text-2xl">MindsLoom</h2>
+                        <p class="text-secondary/80 leading-relaxed mb-4">Digital Marketing & Growth Solutions</p>
+                        <div class="w-16 h-16 bg-secondary/20 rounded-lg mb-4 flex items-center justify-center">
+                            <span class="text-2xl font-julius text-secondary">ML</span>
                         </div>
                     </div>
-
                     <div class="space-y-3">
                         <div class="flex items-start space-x-3">
-                            <svg class="w-4 h-4 text-custom mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 text-secondary/80 mt-1 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                    clip-rule="evenodd"></path>
+                                    clip-rule="evenodd" />
                             </svg>
-                            <p class="text-custom">MindsLoom Pvt. Ltd.<br>Sector 2, HSR Layout,<br>Bengaluru,
-                                Karnataka<br>560102,
-                                India</p>
+                            <p class="text-secondary/80 text-sm">MindsLoom Pvt. Ltd.<br>Sector 2, HSR
+                                Layout,<br>Bengaluru, Karnataka<br>560102, India</p>
                         </div>
-
                         <div class="flex items-center space-x-3">
-                            <svg class="w-4 h-4 text-custom flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
                                 <path
-                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                                </path>
+                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                             </svg>
-                            <p class="text-custom">+91 9266811039</p>
+                            <p class="text-secondary/80 text-sm">+91 9266811039</p>
                         </div>
-
                         <div class="flex items-center space-x-3">
-                            <svg class="w-4 h-4 text-custom flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            <svg class="w-4 h-4 text-secondary/80 flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
-                            <p class="text-custom">business@mindsloom.com</p>
+                            <p class="text-secondary/80 text-sm">business@mindsloom.com</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="links-wrapper">
-                    <h3 class="text-white font-semibold mb-3 sm:mb-4 font-heading">Quick Links</h3>
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="about-us.html"
-                                class="text-custom hover-accent transition-colors duration-200">About Us</a>
+                        <li><a href="#about"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">About
+                                Us</a></li>
+                        <li><a href="pages/services.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Services</a>
                         </li>
-                        <li><a href="services.html"
-                                class="text-custom hover-accent transition-colors duration-200">Services</a>
+                        <li><a href="pages/work.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Our
+                                Work</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Blog</a>
                         </li>
-                        <li><a href="work.html" class="text-custom hover-accent transition-colors duration-200">Our
-                                Work</a>
+                        <li><a href="#contact"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Contact</a>
                         </li>
-                        <li><a href="blogs.html"
-                                class="text-custom hover-accent transition-colors duration-200">Blog</a></li>
-                        <li><a href="#contact-section"
-                                class="text-custom hover-accent transition-colors duration-200">Contact</a></li>
+                        <li><a href="pages/privacy-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Privacy
+                                Policy</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Terms
+                                of Service</a></li>
+                        <li><a href="pages/cookie-policy.html"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Cookie
+                                Policy</a></li>
                     </ul>
                 </div>
 
-                <!-- Social Media -->
-                <div class="follow-wrapper">
-                    <h3 class="text-white font-semibold mb-3 sm:mb-4 font-heading">Follow Us</h3>
-                    <div class="flex flex-wrap gap-3 sm:gap-4">
+                <!-- Services -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Web
+                                Development</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Mobile
+                                App Development</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Digital
+                                Marketing</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">AI
+                                Solutions</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Brand
+                                Identity</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="#"
+                                class="text-secondary/80 hover:text-secondary transition-colors duration-200 text-sm">Consulting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us -->
+                <div>
+                    <h3 class="text-secondary font-semibold mb-3 sm:mb-4 font-julius">Follow Us</h3>
+                    <div class="flex flex-wrap gap-3 sm:gap-4 mb-6">
                         <a href="https://www.linkedin.com/company/mindsloom/"
-                            class="text-custom hover-accent transition-colors duration-200" aria-label="LinkedIn">
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="LinkedIn">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                         <a href="https://www.instagram.com/_mindsloom_"
-                            class="text-custom hover-accent transition-colors duration-200" aria-label="Instagram">
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Instagram">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
-                                    d="M12.017 0C8.396 0 7.989.013 7.041.048 6.094.082 5.52.204 5.02.43c-.524.204-.973.478-1.417.923-.445.444-.719.893-.923 1.417-.226.5-.348 1.074-.382 2.021C2.013 7.989 2 8.396 2 12.017s.013 4.028.048 4.976c.034.947.156 1.521.382 2.021.204.524.478.973.923 1.417.444.445.893.719 1.417.923.5.226 1.074.348 2.021.382.947.035 1.354.048 4.976.048s4.028-.013 4.976-.048c.947-.034 1.521-.156 2.021-.382.524-.204.973-.478 1.417-.923.445-.444.719-.893.923-1.417.226-.5.348-1.074.382-2.021.035-.947.048-1.354.048-4.976s-.013-4.028-.048-4.976c-.034-.947-.156-1.521-.382-2.021-.204-.524-.478-.973-.923-1.417-.444-.445-.893-.719-1.417-.923-.5-.226-1.074-.348-2.021-.382C16.045.013 15.638 0 12.017 0zM12.017 2.162c3.584 0 4.009.014 5.42.048.308.014.475.064.586.107.147.057.252.126.363.236.11.111.18.216.236.363.043.111.093.278.107.586.034 1.411.048 1.836.048 5.42s-.014 4.009-.048 5.42c-.014.308-.064.475-.107.586-.057.147-.126.252-.236.363-.111.11-.216.18-.363.236-.111.043-.278.093-.586.107-1.411.034-1.836.048-5.42.048s-4.009-.014-5.42-.048c-.308-.014-.475-.064-.586-.107-.147-.057-.252-.126-.363-.236-.11-.111-.18-.216-.236-.363-.043-.111-.093-.278-.107-.586-.034-1.411-.048-1.836-.048-5.42s.014-4.009.048-5.42c.014-.308.064-.475.107-.586.057-.147.126-.252.236-.363.111-.11.216-.18.363-.236.111-.043.278-.093.586-.107 1.411-.034 1.836-.048 5.42-.048zm0 3.676c-3.745 0-6.78 3.035-6.78 6.78s3.035 6.78 6.78 6.78 6.78-3.035 6.78-6.78-3.035-6.78-6.78-6.78zm0 11.187c-2.43 0-4.407-1.977-4.407-4.407s1.977-4.407 4.407-4.407 4.407 1.977 4.407 4.407-1.977 4.407-4.407 4.407zm8.632-11.539c-.875 0-1.584-.709-1.584-1.584s.709-1.584 1.584-1.584 1.584.709 1.584 1.584-.709 1.584-1.584 1.584z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
-                            class="text-custom hover-accent transition-colors duration-200" aria-label="Facebook">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.624 5.367 11.99 11.988 11.99s11.99-5.366 11.99-11.99C24.007 5.367 18.641.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.781c-.24 0-.49-.068-.683-.205-.193-.137-.342-.342-.41-.581-.068-.24-.034-.49.102-.683.137-.193.342-.342.581-.41.24-.068.49-.034.683.102.193.137.342.342.41.581.068.24.034.49-.102.683-.137.193-.342.342-.581.41z" />
                             </svg>
                         </a>
                         <a href="https://x.com/mindsloom"
-                            class="text-custom hover-accent transition-colors duration-200" aria-label="Twitter">
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Twitter">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                             </svg>
                         </a>
+                        <a href="https://www.facebook.com/profile.php?id=61566417231602&mibextid=wwXIfr&mibextid=wwXIfr"
+                            class="text-secondary/80 hover:text-secondary transition-colors duration-200 bg-secondary/10 p-2 rounded-lg hover:bg-secondary/20"
+                            aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
                     </div>
-                </div>
 
-                <!-- Newsletter Signup -->
-                <div>
-                    <h3 class="text-white font-semibold mb-3 sm:mb-4 font-heading">Get Marketing Insights</h3>
-                    <p class="text-custom mb-4">Subscribe to our newsletter for the latest marketing trends and growth
-                        strategies.
-                    </p>
-                    <form class="space-y-3" onsubmit="handleNewsletterSignup(event)">
-                        <input type="email" placeholder="Enter your email"
-                            class="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                            required>
-                        <button type="submit"
-                            class="w-full accent-blue text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                            Subscribe
-                        </button>
-                    </form>
+                    <!-- Newsletter Signup -->
+                    <div class="bg-secondary/10 rounded-lg p-4">
+                        <h4 class="text-secondary font-semibold mb-2 text-sm">Stay Updated</h4>
+                        <p class="text-secondary/70 text-xs mb-3">Subscribe to our newsletter for the latest updates and
+                            insights.</p>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email"
+                                class="flex-1 px-3 py-2 text-xs bg-white/20 border border-secondary/30 rounded-lg text-secondary placeholder-secondary/60 focus:outline-none focus:ring-2 focus:ring-secondary/50">
+                            <button
+                                class="px-3 py-2 bg-secondary text-primary rounded-lg text-xs font-semibold hover:bg-secondary/90 transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Divider -->
-            <div class="border-t border-custom mb-6"></div>
-
-            <!-- Bottom Footer -->
-            <div
-                class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-center sm:text-left">
-                <div class="text-custom">
-                    © 2025 MindsLoom. All Rights Reserved.
-                </div>
-
-                <div class="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
-                    <a href="privacy-policy.html"
-                        class="text-custom hover-accent transition-colors duration-200">Privacy Policy</a>
-                    <a href="terms-conditions.html"
-                        class="text-custom hover-accent transition-colors duration-200">Terms & Conditions</a>
-                    <a href="cookie-policy.html" class="text-custom hover-accent transition-colors duration-200">Cookie
-                        Policy</a>
+            <!-- Bottom Section -->
+            <div class="border-t border-secondary/20 pt-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="text-center sm:text-left">
+                        <p class="text-secondary/70 text-sm">
+                            © 2024 MindsLoom Pvt. Ltd. All rights reserved.
+                        </p>
+                        <p class="text-secondary/60 text-xs mt-1">
+                            Digital Marketing & Growth Solutions | Connecting Ideas to Innovation
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-secondary/70 text-xs">Available for new projects</span>
+                        </div>
+                        <a href="https://wa.me/919266811039"
+                            class="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                            Quick Chat
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -884,6 +821,24 @@
                 // Initialize analytics or other tracking scripts here
                 // Example: enableGoogleAnalytics();
             };
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Header Scroll Effect
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('bg-white/90', 'shadow-lg');
+                } else {
+                    header.classList.remove('bg-white/90', 'shadow-lg');
+                }
+            });
 
             // Reject non-essential cookies
             window.rejectCookies = function () {
