@@ -31,6 +31,14 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <!-- Email JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("0n2IqI7pqVMo-pnWM");
+        })();
+    </script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -467,14 +475,14 @@
                             class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-julius text-secondary leading-tight">
                             Transform Your Vision into an AI-Powered Product
                         </h1>
-                        <h2
+                        <!-- <h2
                             class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-julius text-secondary/90 leading-tight">
 
                         </h2>
                         <h3
                             class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-julius text-secondary/80 leading-tight">
 
-                        </h3>
+                        </h3> -->
                     </div>
 
                     <p
@@ -1918,15 +1926,25 @@
             }
         });
 
-        // Quote Form Submission
-        document.getElementById('quote-form').addEventListener('submit', (e) => {
+
+        // Quote Form Submission via EmailJS
+        document.getElementById('quote-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you for your quote request! We\'ll get back to you soon.');
-            quoteModal.classList.add('hidden');
+
+            emailjs.sendForm('service_ptx0yg2', 'template_1r9424y', this)
+                .then(() => {
+                    alert("✅ Thank you for your quote request! We'll get back to you soon.");
+                    document.getElementById('quote-modal').classList.add('hidden');
+                    this.reset(); // clear form
+                }, (error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("❌ Oops! Something went wrong. Please try again later.");
+                });
         });
 
-        // Detailed Contact Form Submission
-        document.getElementById('detailed-contact-form').addEventListener('submit', (e) => {
+
+        // Detailed Contact Form Submission via EmailJS
+        document.getElementById('detailed-contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Validate at least one service is selected
@@ -1936,19 +1954,26 @@
                 return;
             }
 
-            // Collect form data
-            const formData = new FormData(e.target);
-            const selectedServices = Array.from(services).map(service => service.value);
+            // Combine selected services into a single comma-separated string
+            const selectedServices = Array.from(services).map(service => service.value).join(', ');
 
-            // Show success message with details
-            const name = formData.get('fullName');
-            const budget = formData.get('budget');
-            const timeline = formData.get('timeline');
+            // Append the combined list to FormData so EmailJS can access it
+            const formData = new FormData(this);
+            formData.append('selectedServices', selectedServices);
 
-            alert(`Thank you ${name}! We've received your project request.\n\nBudget: ${budget}\nTimeline: ${timeline}\nServices: ${selectedServices.join(', ')}\n\nOur team will review your requirements and get back to you within 24 hours.`);
+            // Send the form using EmailJS
+            emailjs.sendForm('service_ptx0yg2', 'template_enpdpsu', this)
+                .then(() => {
+                    const name = formData.get('fullName');
+                    const budget = formData.get('budget');
+                    const timeline = formData.get('timeline');
 
-            // Reset form
-            e.target.reset();
+                    alert(`✅ Thank you ${name}! We've received your project request.\n\nBudget: ${budget}\nTimeline: ${timeline}\nServices: ${selectedServices}\n\nOur team will contact you within 24 hours.`);
+                    this.reset();
+                }, (error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("❌ Oops! Something went wrong. Please try again later.");
+                });
         });
 
         // Services Swiper
